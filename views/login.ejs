@@ -1,0 +1,29 @@
+<audio autoplay>
+    <source src="/img/login/04 Rage Khaab [320]_output.mp3" type="audio/mpeg">
+</audio>
+<%- include("./includes/messages/messageLogin") %>
+    <main class="form-signin background">
+        <div class="form-group">
+            <div class="g-recaptcha" data-sitekey="6LdU4BkcAAAAAHMi223hB7W3gJ4cMgdePclpyb0f"></div>
+        </div>
+        <form action="/users/login" method="POST">
+            <h1 class="h3 mb-3 fw-normal text-center">ورود</h1>
+            <div class="form-floating text-right">
+                <label for="floatingInput">ایمیل</label>
+                <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            </div>
+            <div class="form-floating text-right">
+                <label for="floatingPassword">پسورد</label>
+                <input type="password" name="password" class="form-control" id="floatingPassword"
+                    placeholder="Password">
+            </div>
+
+            <div class="checkbox mb-3 text-right">
+                <label>
+                    <input name="remember" type="checkbox" value="remember-me"> مرا به خاطر بسپار
+                </label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">ورود</button>
+            <p class="mt-5 mb-3 text-muted"></p>
+        </form>
+    </main>

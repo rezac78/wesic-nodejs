@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/static/socket.io.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="shortcut icon" href="1.ico" type="image/x-icon">
+    <% if(path==="/dashboard"){%>
+        <link rel="stylesheet" href="/css/dashboard.css">
+    <%}%>
+    <% if(path==="/login" || path==="/register"){%>
+        <link rel="stylesheet" href="/css/login.css">
+        <script src="https://www.google.com/recaptcha/api.js?hl=fa" async defer></script>
+    <%}%>
+    <title><%= pageTitle%></title>
+
+
+    <meta name="theme-color" content="#7952b3">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body style="direction: rtl;">
+    <%- body%>
+
+    <% if(path==="/login"){%>
+        <script src="/js/login.js"></script>
+    <%}%>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/admin/js/dashboard.js"></script>
+    <script src="/js/jquery.slim.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+
+</html>

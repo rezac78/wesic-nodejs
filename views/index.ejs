@@ -1,0 +1,361 @@
+<body onscroll="myFunction()">
+    <nav>
+        <header>
+            <!-- start toast -->
+            <div class="toast mitoast d-none d-md-block " role="alert" id="mytoast">
+                <div class="toast-header d-flex justify-content-between">
+                    <button class="close mr-1" type="button">
+                        <span>&times;</span>
+                    </button>
+                    <strong class="Admin">Admin</strong>
+                    <img src="/img/MUSIC.png" alt="">
+                </div>
+                <div class="toast-body text-center"
+                    style="background-color: white;direction: ltr; color: black; font-size: 1.4em;">
+                    <span class="text-center">خوش اومدید</span>
+                </div>
+            </div>
+            <!-- end toast -->
+            <div class="login-box">
+                <form action="">
+                    <div class="nav-bar d-flex justify-content-between">
+                        <div class="search d-flex  ml-2 pt-2">
+                            <button class="serch-reza">جستجو</button>
+                            <input style="height: 5vh;" type="search" class="form-control-sm input-reza"
+                                placeholder="جستجو در بین هزاران اهنگ...">
+                        </div>
+                        <div class="icons d-flex ml-2 pt-2  ">
+                            <a class="music user" href="/users/register"><i class="fas fa-user"></i></a>
+                            <a class="musicplayer" href="/musicplayer"><i class="fab fa-spotify"></i></a>
+                            <a class="game" href="/game"><i class="fas fa-gamepad"></i></a>
+                            <a class="music" href="#">
+                                <i id="musicIcon" class="fas fa-pause"></i>
+                                <audio autoplay>
+                                    <source src="/music/Relax Music 2019 - Nicmusic 01.mp3" type="audio/mpeg">
+                                </audio>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="text text-center">
+                        <span class="re  badge" style="color: black; background-color: white;">sic</span>
+                        <span class="badge" style="color: red;">we</span>
+                    </div>
+                </form>
+            </div>
+            <section class="mainbox">
+                <div class="mains">
+                    <div class="my-row d-flex flex-row justify-content-center  flex-wrap  ">
+                        <div class="my-col"><a style="text-decoration: none; color: white;" href="/">خانه</a>
+                        </div>
+                        <div class="my-col"><a style="text-decoration: none; color: white;" href="/traditi">سنتی</a>
+                        </div>
+                        <div class="my-col"><a style="text-decoration: none; color: white;" href="/musicvideo">موزیک
+                                ویدیو</a></div>
+                        <div class="my-col"><a style="text-decoration: none; color: white;" href="/pop">پاپ</a>
+                        </div>
+                        <div class="my-col"><a style="text-decoration: none; color: white;" href="/musicfilm">موسیقی
+                                فیلم</a></div>
+                        <div class="my-col"><a style="text-decoration: none; color: white;" href="/england">خارجی</a>
+                        </div>
+                        <div class="my-col"><a style="text-decoration: none; color: white;"
+                                href="/cover">راک</a>
+                        </div>
+                        <div class="my-col"><a style="text-decoration: none; color: white;" href="/cover">محلی</a></div>
+                        <div class="my-col"><a style="text-decoration: none; color: white;" href="/cover">بی کلام</a></div>
+                        <div class="my-col"><a style="text-decoration: none; color: white;" href="/study">برای
+                                مطالعه</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+    </nav>
+    <!-- end navbar -->
+    <!--start slidershow  -->
+    <div class="carousel slide carousel-fade" data-ride="carousel" id="mycarousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block " src="/img/1920x1080 dj wallpaper for desktop background.jfif" alt="">
+                <div class="carousel-caption">
+                    <p>جدید ترین کنسرت ها</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="/img/Star Wars [1920x1080].png" alt="">
+                <div class="carousel-caption">
+                    <p class="red">جدید ترین موزیک های فیلم</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="/img/TAYLOR SWIFT wallpaper 1920x1080.jfif" alt="">
+                <div class="carousel-caption">
+                    <p>به روز نرین اهنگ های خارجی</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100"
+                    src="/img/بزن این زخمه ،کنسرت استاد شجریان ،حسین علیزاده،کیهان کلهر و همایون شجریان.jfif" alt="">
+                <div class="carousel-caption">
+                    <p>برترین موسیقی های سنتی</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="/img/72753ff3fd7edad5a635c2d001102816.jpg" alt="">
+                <div class="carousel-caption">
+                    <p>بروز ترین اهنگ های پاپ</p>
+                </div>
+            </div>
+            <a href="#mycarousel" role="button" data-slide="prev" class="carousel-control-prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#mycarousel" role="button" data-slide="next" class="carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+    <!--end slidershow  -->
+    <!-- start card -->
+    <main>
+        <div style="margin: auto;" class="row">
+            <!-- <% for(let post of posts){%>
+                <div class="col-md-6 col-lg-6 col-xl-4 col-sm-12 respons">
+                    <div style="margin: 20px;  height: 74vh;" class="card WOW animate__animated ">
+                        <div class="card">
+                            <img style="height: auto;" src="http://localhost:3000/uploads/home/<%= post.images  %> "
+                                class="card-img-top" alt="">
+                            <div class="card-body ">
+                                <div class="menuicon">
+                                    <span class="s1"></span>
+                                    <span class="s2"></span>
+                                </div>
+                                <h3 style="color: white;" class="card-title">
+                                    <%= post.title %>
+                                </h3>
+                                <p style="color: white; font-size: 1em;" class="card-text ">
+                                    <%= truncate(post.content,210) %><a style="color: red;" href="/pageengland">بیشتر
+                                            بخوانید</a>
+                                </p>
+                                <a style="color: red;" href="/posts/<%= post._id  %> " class="btn"><span>ورود</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <%}%> -->
+            <div class="col-md-6 col-lg-6 col-xl-4 col-sm-12 respons">
+                <div style="margin: 20px;  height: 74vh;" class="card WOW animate__animated ">
+                    <div class="card">
+                        <img style="height: auto;" src="/img/پستر/katy perry free desktop wallpaper.png"
+                            class="card-img-top" alt="">
+                        <div class="card-body ">
+                            <div class="menuicon">
+                                <span class="s1"></span>
+                                <span class="s2"></span>
+                            </div>
+                            <h3 style="color: white;" class="card-title">خارجی</h3>
+                            <p style="color: white; font-size: 1em;" class="card-text ">با فراگیری جاز در سراسر
+                                دنیا،
+                                این موسیقی تأثیر زیادی روی فرهنگ‌های موسیقایی ملت‌ها، مناطق و محل‌های مختلف، همچنین
+                                رشد
+                                بسیاری از سبک‌های شاخص دیگر داشت. جاز نیواورلینز که از اوایل دههٔ ۱۹۱۰ به وجود
+                                آمد،<a style="color: red;" href="/pageengland">بیشتر
+                                    بخوانید</a></p>
+                            <a style="color: red;" href="/upload/englandPage" class="btn"><span>ورود</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-4 col-sm-12 respons">
+                <div style="margin: 20px;  height: 75vh;" class="card WOW animate__animated ">
+                    <div class="card" id="tititit">
+                        <img style="height:auto;"
+                            src="/img/پستر/همایون شجریان و برادران پورناظری در کانادا کنسرت برگزار می کنند.jfif"
+                            class="card-img-top" alt="">
+                        <div class="card-body">
+                            <div class="menuicon">
+                                <span class="s1"></span>
+                                <span class="s2"></span>
+                            </div>
+                            <h3 style="color: white;" class="card-title">سنتی</h3>
+                            <p style="color: white; font-size: 1em;" class="card-text ">موسیقی اصیل ایرانی که با نام
+                                موسیقی سنتی ایرانی، موسیقی کلاسیک ایرانی و موسیقی دستگاهی نیز شناخته می‌شود،[۱] شامل
+                                <a href="/pagetraditional">بیشتر بخوانید</a>
+                            </p>
+                            <a href="/upload/pageTradition" class="btn"><span>ورود</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-4 col-sm-12 respons">
+                <div style="margin: 20px;  height: 75vh;" class="card WOW animate__animated ">
+
+                    <div class="card">
+                        <img style="height: auto;" src="/img/پستر/download.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <div class="menuicon">
+                                <span class="s1"></span>
+                                <span class="s2"></span>
+                            </div>
+                            <h3 style="color: white;" class="card-title">موزیک ویدیو</h3>
+                            <p style="color: white; font-size: 1em;" class="card-text ">کنسرت (به انگلیسی: Concert)
+                                به
+                                یک اجرای زنده (معمولاً موسیقی) در مقابل عده‌ای تماشاگر گفته می‌شود. اجرای یک کنسرت
+                                می‌تواند به وسیله یک گروه، مانند یک ارکستر انجام گیرد. کنسرت‌ها از دسته رسانه‌های
+                                حضوری
+                                هستند</p>
+                            <a s href="/musicvideo" class="btn"><span>ورود</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-4 col-sm-12 respons">
+                <div style="margin: 20px;  height: 75vh;" class="card WOW animate__animated ">
+
+                    <div class="card">
+                        <img style="height: auto;" src="/img/پستر/download.jfif" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <div class="menuicon">
+                                <span class="s1"></span>
+                                <span class="s2"></span>
+                            </div>
+                            <h3 style="color: white;" class="card-title">موسیقی فیلم</h3>
+                            <p style="color: white; font-size: 1em;" class="card-text ">موسیقی فیلم واصف موسیقایی از
+                                موقعیت و روند یک داستان است و نقش بسزایی در تکامل هیجانات و احساسات یک اثر نمایشی
+                                بازی
+                                می‌کند. ابزارآلات و سبک بکار رفته در موسیقی یک فیلم حیطه وسیعی را در بر گرفته</p>
+                            <a href="/upload/musicfilmPage" class="btn"><span>ورود</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-4 col-sm-12 respons">
+                <div style="margin: 20px;  height: 75vh;" class="card WOW animate__animated ">
+
+                    <div class="card">
+                        <img style="height: auto;"
+                            src="/img/پستر/1549179162-عاشق-و-در-به-درم-تویی-قرص-قمرم-زده-امشب-به-سرم-که-دلت-رو-ببرم-از-بهنام-بانی.jpg"
+                            class="card-img-top" alt="">
+                        <div class="card-body">
+                            <div class="menuicon">
+                                <span class="s1"></span>
+                                <span class="s2"></span>
+                            </div>
+                            <h3 style="color: white;" class="card-title">پاپ</h3>
+                            <p style="color: white; font-size: 1em;" class="card-text ">موسیقی پاپ (به انگلیسی: Pop
+                                music، که در اصل به معنی موسیقی عامه‌پسند (popular) می‌باشد) یک سبک از موسیقی
+                                عامه‌پسند
+                                است. و معمولاً در مقابل موسیقی کلاسیک و فولک (محلی) قرار می‌گیرد و از آن‌ها متمایز
+                                است.
+                                *[۱] با این حال هنرمندان این سبک <a href="/pagepop">بیشتر
+                                    بخوانید</a></p>
+                            <a s href="/upload/popPage" class="btn"><span>ورود</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-4 col-sm-12 respons">
+                <div style="margin: 20px;  height: 75vh;" class="card WOW animate__animated ">
+
+                    <div class="card">
+                        <img style="height: auto;" src="/img/پستر/177497_691.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <div class="menuicon">
+                                <span class="s1"></span>
+                                <span class="s2"></span>
+                            </div>
+                            <h3 style="color: white;" class="card-title">راک</h3>
+                            <p style="color: white; font-size: 1em;" class="card-text ">موسیقی راک گونه‌ای موسیقی
+                                عامه‌پسند است که در دهه ۵۰ میلادی تحت عنوان راک اند رول شکل گرفت و در دهه ۶۰ و بعدتر
+                                به
+                                طیف گسترده‌ای از سبک‌های موسیقی، به ویژه در ایالات متحده آمریکا و بریتانیا گسترش
+                                یافت.[۱][۲][۳] موسیقی راک ریشه<a href="/cover">بیشتر بخوانید</a></p>
+                            <a s href="/cover" class="btn"><span>ورود</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-4 col-sm-12 respons">
+                <div style="margin: 20px;  height: 75vh;" class="card WOW animate__animated ">
+
+                    <div class="card">
+                        <img style="height: auto;" src="/img/پستر/کنسرت-موسیقی-گروه-گیل-و-دیلم.jpg" class="card-img-top"
+                            alt="">
+                        <div class="card-body">
+                            <div class="menuicon">
+                                <span class="s1"></span>
+                                <span class="s2"></span>
+                            </div>
+                            <h3 style="color: white;" class="card-title">محلی</h3>
+                            <p style="color: white; font-size: 1em;" class="card-text ">پیش از سال ۵۰ خورشیدی،
+                                موسیقیدانان ایرانی دو واژه عمومی برای این نوع موسیقی را به کار می‌بردند. موسیقی محلی
+                                و
+                                موسیقی فولکلور. «فولکلور» از سنتی انگلیسی می‌آید و تنها واژه باقی‌مانده از مکتب
+                                طبقه‌بندی دانش در انگلستان است <a href="/cover">بیشتر بخوانید</a></p>
+                            <a s href="/cover" class="btn"><span>ورود</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-4 col-sm-12 respons">
+                <div style="margin: 20px;  height: 75vh;" class="card WOW animate__animated ">
+
+                    <div class="card">
+                        <img style="height: auto;" src="/img/پستر/f53227feb202591ffa42b327f9414810.jpg"
+                            class="card-img-top" alt="">
+                        <div class="card-body">
+                            <div class="menuicon">
+                                <span class="s1"></span>
+                                <span class="s2"></span>
+                            </div>
+                            <h3 style="color: white;" class="card-title">بی کلام</h3>
+                            <p style="color: white; font-size: 1em;" class="card-text ">موسیقیِ سازی[۱] یا موسیقی
+                                بی‌کلام قطعه‌ای موسیقی است که تنها برای صدای سازها تصنیف یا تنظیم شده و صدای انسانی
+                                یا
+                                آواز در آن نیست.و فقط از صدا های طبیعی یا ساز های مختلف در آن استفاده میشود.<a
+                                    href="/cover">بیشتر
+                                    بخوانید</a></p>
+                            <a s href="/cover" class="btn"><span>ورود</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-4 col-sm-12 respons">
+                <div style="margin: 20px;  height: 75vh;" class="card WOW animate__animated ">
+                    <div class="card">
+                        <img style="height: auto;" src="/img/پستر/552869.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <div class="menuicon">
+                                <span class="s1"></span>
+                                <span class="s2"></span>
+                            </div>
+                            <h3 style="color: white;" class="card-title">برای مطالعه</h3>
+                            <p style="color: white; font-size: 1em;" class="card-text ">با فراگیری جاز در سراسر
+                                دنیا،
+                                این موسیقی تأثیر زیادی روی فرهنگ‌های موسیقایی ملت‌ها، مناطق و محل‌های مختلف، همچنین
+                                رشد
+                                بسیاری از سبک‌های شاخص دیگر داشت. جاز نیواورلینز که از اوایل دههٔ ۱۹۱۰ به وجود
+                                آمد،</p>
+                            <a s href="/study" class="btn"><span>ورود</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <footer class="end">
+        <section class="end">
+            <form action="">
+                <div class="text text-center">
+                    <h2>سایت we sic شامل برترین اهنگ های پاپ سنتی<br>موسیقی فیلم و شامل برترین کنسرت های روز دنیا
+                    </h2>
+                    <h2>we sic 2019 - 2021</h2>
+                    <div style="font-size: 1.5em;">
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href="""><i class=" fab fa-instagram"></i></a>
+                        <a href=""><i class="fas fa-film"></i></a>
+                        <a href=""><i class="fab fa-telegram-plane"></i>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </footer>

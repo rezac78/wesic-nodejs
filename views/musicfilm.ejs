@@ -1,0 +1,389 @@
+<body onscroll="myFunction()"
+    style="background-image: url(/img/ZLINE\ Kitchen\ and\ Bath\ 3\ x\ 5\ Oil-Rubbed\ Bronze\ Copper\ Sample.jfif);">
+    <!-- !start nabvar -->
+    <nav>
+        <header>
+            <div class="login-box" style="background-image: url(/img/12.png)">
+                <form action="">
+                    <div class="nav-bar d-flex justify-content-between">
+                        <div class="search d-flex  ml-2 pt-2">
+                            <button class="serch-reza">جستجو</button>
+                            <input style="height: 5vh;" type="search" class="form-control-sm input-reza"
+                                placeholder="جستجو در بین هزاران اهنگ...">
+                        </div>
+                        <div class="icons d-flex ml-2 pt-2">
+                            <a class="music user" href="/users/register"><i class="fas fa-user"></i></a>
+                            <a class="musicplayer" href="/musicplayer"><i class="fab fa-spotify"></i></a>
+                            <a class="game" href="/game"><i class="fas fa-gamepad"></i></a>
+                            <a class="music" href="#">
+                                <i id="musicIcon" class="fas fa-pause"></i>
+                                <audio autoplay>
+                                    <source src="/music/WhatsApp Audio 2020-05-12 at 12.09.01 PM.mpeg"
+                                        type="audio/mpeg">
+                                </audio>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="text text-center">
+                        <span class="re  badge" style="color: black; background-color: white;">sic</span>
+                        <span class="badge" style="color: red;">we</span>
+                    </div>
+                </form>
+            </div>
+        </header>
+    </nav>
+    <nav>
+        <section class="mainbox">
+            <div class="mains">
+                <div class="my-row d-flex flex-row justify-content-center  flex-wrap"
+                    style="background-image: url(/img/12.png)">
+                    <div class="my-col"><a style="text-decoration: none; color: white;" href="/">خانه</a>
+                    </div>
+                    <div class="my-col"><a style="text-decoration: none; color: white;" href="/traditi">سنتی</a>
+                    </div>
+                    <div class="my-col"><a style="text-decoration: none; color: white;" href="/musicvideo">موزیک
+                            ویدیو</a></div>
+                    <div class="my-col"><a style="text-decoration: none; color: white;" href="/pop">پاپ</a></div>
+                    <div class="my-col"><a style="text-decoration: none; color: white;" href="/musicfilm">موسیقی
+                            فیلم</a></div>
+                    <div class="my-col"><a style="text-decoration: none; color: white;" href="/england">خارجی</a>
+                    </div>
+                    <div class="my-col"><a style="text-decoration: none; color: white;" href="/cover">راک</a></div>
+                    <div class="my-col"><a style="text-decoration: none; color: white;" href="/cover">محلی</a></div>
+                    <div class="my-col"><a style="text-decoration: none; color: white;" href="/cover">بی کلام</a></div>
+                    <div class="my-col"><a style="text-decoration: none; color: white;" href="/study">برای
+                            مطالعه</a></div>
+                </div>
+            </div>
+        </section>
+    </nav>
+    <!-- !end nabvar -->
+    <!-- !start carousel -->
+    <div class="carousel slide carousel-fade" data-ride="carousel" id="mycarousel">
+        <ol class="carousel-indicators">
+            <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#mycarousel" data-slide-to="1"></li>
+            <li data-target="#mycarousel" data-slide-to="2"></li>
+            <li data-target="#mycarousel" data-slide-to="3"></li>
+            <li data-target="#mycarousel" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block " src="/img/فیلم/e1.jfif" alt="">
+                <div class="carousel-caption">
+                    <p><big>Harry Potter</big></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="/img/فیلم/e2.jfif" alt="">
+                <div class="carousel-caption">
+                    <p>Game of Thrones</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="/img/فیلم/a3 (2).jfif" alt="">
+                <div class="carousel-caption">
+                    <p>Money Heist</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="/img/فیلم/e4.jfif" alt="">
+                <div class="carousel-caption">
+                    <p>13 Reasons Why</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="/img/فیلم/e5.jfif" alt="">
+                <div class="carousel-caption">
+                    <p>Avengers</p>
+                </div>
+            </div>
+        </div>
+        <a href="#mycarousel" role="button" data-slide="prev" class="carousel-control-prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#mycarousel" role="button" data-slide="next" class="carousel-control-next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <!-- !end carousel -->
+    <!-- !start card-->
+    <main>
+        <div style="margin: auto;" class="row">
+            <% for(let musicfilm of musicfilms){%>
+                <div class="col-md-6 col-lg-6 col-xl-4 col-sm-12 respons">
+                    <div style="margin: 20px;  height: 75vh; background-image: url(/img/ZLINE\ Kitchen\ and\ Bath\ 3\ x\ 5\ Oil-Rubbed\ Bronze\ Copper\ Sample.jfif);"
+                        class="card WOW animate__animated">
+                        <div class="card">
+                            <img style="height: auto;" src="http://162.55.211.40:3000/uploads/musicfilm/<%= musicfilm.images  %> " class="card-img-top" alt="">
+                            <div class="card-body ">
+                                <div class="menuicon">
+                                    <span class="s1"></span>
+                                    <span class="s2"></span>
+                                </div>
+                                <h3 style="color: white;" class="card-title"><%= musicfilm.title %></h3>
+                                <p style="color: white; font-size: 1em;" class="card-text "><%= truncate(musicfilm.content,210) %><a style="color: red;" href="">بیشتر بخوانید</a>
+                                </p>
+                                <a style="color: red;"  href="/upload/musicfilmPage" class="btn"><span>ورود</span></a>
+                            </div>
+                            <div class="icon">
+                                <div class="icon-box">
+                                    <i style="color: red;" class="fas fa-heart WOW animate__animated"></i>
+                                    <span>مورد علاقه</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <% } %>
+                    <!-- <div class="col-md-6 col-lg-6 col-xl-4 col-sm-12 respons">
+                <div style="margin: 20px;  height: 75vh; background-image: url(/img/ZLINE\ Kitchen\ and\ Bath\ 3\ x\ 5\ Oil-Rubbed\ Bronze\ Copper\ Sample.jfif);"
+                    class="card WOW animate__animated">
+                    <div class="card">
+                        <img style="height: auto;" src="/img/فیلم/21212.jpg" class="card-img-top" alt="">
+                        <div class="card-body ">
+                            <div class="menuicon">
+                                <span class="s1"></span>
+                                <span class="s2"></span>
+                            </div>
+                            <h3 style="color: white;" class="card-title">Harry Potter</h3>
+                            <p style="color: white; font-size: 1em;" class="card-text "> فیلم‌های هری پاتر که فیلم‌هایی
+                                انگلیسی-آمریکایی هستند، بر اساس کتاب‌های هری پاتر و با همان نام‌های کتاب ساخته شده‌اند.
+                                <a style="color: red;" href="">بیشتر بخوانید</a>
+                            </p>
+                            <a style="color: red;" s href="/musicfilmpage" class="btn"><span>ورود</span></a>
+                        </div>
+                        <div class="icon">
+                            <div class="icon-box">
+                                <i style="color: red;" class="fas fa-heart WOW animate__animated"></i>
+                                <span>مورد علاقه</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-4 col-sm-12 respons">
+                <div style="margin: 20px;  height: 75vh; background-image: url(/img/ZLINE\ Kitchen\ and\ Bath\ 3\ x\ 5\ Oil-Rubbed\ Bronze\ Copper\ Sample.jfif);"
+                    class="card WOW animate__animated">
+                    <div class="card">
+                        <img style="height:auto;" src="/img/فیلم/a2.jfif" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <div class="menuicon">
+                                <span class="s1"></span>
+                                <span class="s2"></span>
+                            </div>
+                            <h3 style="color: white;" class="card-title">Game of Thrones</h3>
+                            <p style="color: white; font-size: 1em;" class="card-text "> بازی تاج‌وتخت (به انگلیسی: Game
+                                of Thrones) یک مجموعه تلویزیونی آمریکایی به سبک خیال‌پردازی حماسی است که <a
+                                    href="">بیشتر بخوانید</a></p>
+                            <a s href="/musicfilmpage" class="btn"><span>ورود</span></a>
+                        </div>
+                        <div class="icon">
+                            <div class="icon-box">
+                                <i style="color: red;" class="fas fa-heart WOW animate__animated"></i>
+                                <span>مورد علاقه</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-4 col-sm-12 respons">
+                <div style="margin: 20px;  height: 75vh; background-image: url(/img/ZLINE\ Kitchen\ and\ Bath\ 3\ x\ 5\ Oil-Rubbed\ Bronze\ Copper\ Sample.jfif);"
+                    class="card WOW animate__animated">
+
+                    <div class="card">
+                        <img style="height: auto;" src="/img/فیلم/a3 (2).jfif" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <div class="menuicon">
+                                <span class="s1"></span>
+                                <span class="s2"></span>
+                            </div>
+                            <h3 style="color: white;" class="card-title">Money Heist</h3>
+                            <p style="color: white; font-size: 1em;" class="card-text "> شخصی به نام «پروفسور» ۸ نفر را
+                                برای سرقت از کارخانهٔ چاپ اسکناس انتخاب می‌کند. این ۸ نفر برای اینکه هویتشان حتی برای<a
+                                    href="">بیشتر بخوانید</a></p>
+                            <a s href="/musicfilmpage" class="btn"><span>ورود</span></a>
+                        </div>
+                        <div class="icon">
+                            <div class="icon-box">
+                                <i style="color: red;" class="fas fa-heart WOW animate__animated"></i>
+                                <span>مورد علاقه</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-4 col-sm-12 respons">
+                <div style="margin: 20px;  height: 75vh; background-image: url(/img/ZLINE\ Kitchen\ and\ Bath\ 3\ x\ 5\ Oil-Rubbed\ Bronze\ Copper\ Sample.jfif);"
+                    class="card WOW animate__animated">
+
+                    <div class="card">
+                        <img style="height: auto;" src="/img/فیلم/a4.jfif" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <div class="menuicon">
+                                <span class="s1"></span>
+                                <span class="s2"></span>
+                            </div>
+                            <h3 style="color: white;" class="card-title">13 Reasons Why</h3>
+                            <p style="color: white; font-size: 1em;" class="card-text "> ۱۳ دلیل برای اینکه (به انگلیسی:
+                                Reasons Why 13) یک سریال اینترنتی آمریکایی در ژانر درام نوجوانانه و معمایی است.<a
+                                    href="">بیشتر بخوانید</a></p>
+                            <a s href="/musicfilmpage" class="btn"><span>ورود</span></a>
+                        </div>
+                        <div class="icon">
+                            <div class="icon-box">
+                                <i style="color: red;" class="fas fa-heart WOW animate__animated"></i>
+                                <span>مورد علاقه</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-4 col-sm-12 respons">
+                <div style="margin: 20px;  height: 75vh; background-image: url(/img/ZLINE\ Kitchen\ and\ Bath\ 3\ x\ 5\ Oil-Rubbed\ Bronze\ Copper\ Sample.jfif);"
+                    class="card WOW animate__animated">
+
+                    <div class="card">
+                        <img style="height: auto;" src="/img/فیلم/a5.jfif" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <div class="menuicon">
+                                <span class="s1"></span>
+                                <span class="s2"></span>
+                            </div>
+                            <h3 style="color: white;" class="card-title">Avengers</h3>
+                            <p style="color: white; font-size: 1em;" class="card-text "> انتقام‌جویان ماروِل (به
+                                انگلیسی: Marvel's The Avengers) (همچنین شناخته شده با نام گردهمایی انتقام‌جویان مارو<a
+                                    href="">بیشتر بخوانید</a></p>
+                            <a s href="/musicfilmpage" class="btn"><span>ورود</span></a>
+                        </div>
+                        <div class="icon">
+                            <div class="icon-box">
+                                <i style="color: red;" class="fas fa-heart WOW animate__animated"></i>
+                                <span>مورد علاقه</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-4 col-sm-12 respons">
+                <div style="margin: 20px;  height: 75vh; background-image: url(/img/ZLINE\ Kitchen\ and\ Bath\ 3\ x\ 5\ Oil-Rubbed\ Bronze\ Copper\ Sample.jfif);"
+                    class="card WOW animate__animated">
+
+                    <div class="card">
+                        <img style="height: auto;" src="/img/فیلم/a6.jfif" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <div class="menuicon">
+                                <span class="s1"></span>
+                                <span class="s2"></span>
+                            </div>
+                            <h3 style="color: white;" class="card-title">Sherlock Holmes</h3>
+                            <p style="color: white; font-size: 1em;" class="card-text "> شرلوک هولمز نام یک کاراگاه
+                                خصوصی بسیار ماهر است که متولد یورکشایر انگلستان است و در اواخر قرن ۱۹ و آغاز قرن ۲<a
+                                    href="">بیشتر بخوانید</a></p>
+                            <a s href="/musicfilmpage" class="btn"><span>ورود</span></a>
+                        </div>
+                        <div class="icon">
+                            <div class="icon-box">
+                                <i style="color: red;" class="fas fa-heart WOW animate__animated"></i>
+                                <span>مورد علاقه</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-4 col-sm-12 respons">
+                <div style="margin: 20px;  height: 75vh; background-image: url(/img/ZLINE\ Kitchen\ and\ Bath\ 3\ x\ 5\ Oil-Rubbed\ Bronze\ Copper\ Sample.jfif);"
+                    class="card WOW animate__animated">
+
+                    <div class="card">
+                        <img style="height: auto;" src="/img/فیلم/1212.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <div class="menuicon">
+                                <span class="s1"></span>
+                                <span class="s2"></span>
+                            </div>
+                            <h3 style="color: white;" class="card-title">Breaking Bad</h3>
+                            <p style="color: white; font-size: 1em;" class="card-text "> برِکینگ بَد، افسارگسیخته یا از
+                                راه به در شدن یا قانون‌شکن (ریشه نام این فیلم از اصطلاح to break bad که در شهر البرو
+                                معر<a href="">بیشتر بخوانید</a></p>
+                            <a s href="/musicfilmpage" class="btn"><span>ورود</span></a>
+                        </div>
+                        <div class="icon">
+                            <div class="icon-box">
+                                <i style="color: red;" class="fas fa-heart WOW animate__animated"></i>
+                                <span>مورد علاقه</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-4 col-sm-12 respons">
+                <div style="margin: 20px;  height: 75vh; background-image: url(/img/ZLINE\ Kitchen\ and\ Bath\ 3\ x\ 5\ Oil-Rubbed\ Bronze\ Copper\ Sample.jfif);"
+                    class="card WOW animate__animated">
+
+                    <div class="card">
+                        <img style="height: auto;" src="/img/فیلم/a7.jfif" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <div class="menuicon">
+                                <span class="s1"></span>
+                                <span class="s2"></span>
+                            </div>
+                            <h3 style="color: white;" class="card-title">Pirates of the Caribbean</h3>
+                            <p style="color: white; font-size: 1em;" class="card-text "> داستان فیلم در دریای کاراییب رخ
+                                می‌دهد که ماجراهای عده‌ای دزد دریایی را روایت می‌کند. دزدی به نام جک اسپارو و الیزاب<a
+                                    href="">بیشتر بخوانید</a></p>
+                            <a s href="/musicfilmpage" class="btn"><span>ورود</span></a>
+                        </div>
+                        <div class="icon">
+                            <div class="icon-box">
+                                <i style="color: red;" class="fas fa-heart WOW animate__animated"></i>
+                                <span>مورد علاقه</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-4 col-sm-12 respons">
+                <div style="margin: 20px;  height: 75vh; background-image: url(/img/ZLINE\ Kitchen\ and\ Bath\ 3\ x\ 5\ Oil-Rubbed\ Bronze\ Copper\ Sample.jfif);"
+                    class="card WOW animate__animated">
+
+                    <div class="card">
+                        <img style="height: auto;" src="/img/فیلم/111.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <div class="menuicon">
+                                <span class="s1"></span>
+                                <span class="s2"></span>
+                            </div>
+                            <h3 style="color: white;" class="card-title">Fast & Furious</h3>
+                            <p style="color: white; font-size: 1em;" class="card-text ">سریع و خشمگین (به انگلیسی: Fast
+                                & Furious) این سری فیلم در سری فیلم‌های سرقت رده‌بندی می‌شود و تا کنون ۹ فیلم از این<a
+                                    href="">بیشتر بخوانید</a></p>
+                            <a s href="/musicfilmpage" class="btn"><span>ورود</span></a>
+                        </div>
+                        <div class="icon">
+                            <div class="icon-box">
+                                <i style="color: red;" class="fas fa-heart WOW animate__animated"></i>
+                                <span>مورد علاقه</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+    </main>
+    <!-- !end card -->
+    <!-- !start footer -->
+    <footer class="end" style="background-image: url(/img/12.png)">
+        <form action="">
+            <div class="text text-center">
+                <h2>سایت we sic شامل برترین اهنگ های پاپ سنتی<br>موسیقی فیلم و شامل برترین کنسرت های روز دنیا</h2>
+                <h2>we sic 2019 - 2021</h2>
+                <div style="font-size: 1.5em;">
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href="""><i class=" fab fa-instagram"></i></a>
+                    <a href=""><i class="fas fa-film"></i></a>
+                    <a href=""><i class="fab fa-telegram-plane"></i>
+                </div>
+            </div>
+        </form>
+    </footer>

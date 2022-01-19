@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/static/socket.io.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="shortcut icon" href="1.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/admin/css/dashboard.css">
+    <title>
+        <%= pageTitle%>
+    </title>
+
+    <meta name="theme-color" content="#7952b3">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">admin</a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+        <div class="navbar-nav">
+            <div class="nav-item text-nowrap">
+                <a class="nav-link px-3" href="#">خروج</a>
+            </div>
+        </div>
+    </header>
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+        <div class="position-sticky pt-3">
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                    <a class="nav-link text-center btn-outline-secondary <%= path === " /admin/dashboard" ? 'active'
+                        : '' %>"
+                        aria-current="page" href="/admin/dashboard">
+                        <span data-feather="home"></span>
+                        داشبورد
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link text-center btn-outline-secondary <%= path === " /admin/posts" ? 'active' : ""
+                        %>" href="/admin/posts">
+                        <span data-feather="file"></span>
+                        صفحه خانه
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link text-center btn-outline-secondary <%= path === " /admin/posts" ? 'active' : ""
+                        %>" href="/admin/tradition">
+                        <span data-feather="file"></span>
+                        صفحه سنتی
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link text-center btn-outline-secondary <%= path === " /admin/posts" ? 'active' : ""
+                        %>" href="/admin/pop">
+                        <span data-feather="file"></span>
+                        صفحه پاپ
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link text-center btn-outline-secondary <%= path === " /admin/posts" ? 'active' : ""
+                        %>" href="/admin/musicfilm">
+                        <span data-feather="file"></span>
+                        صفحه موسیقی فیلم
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link text-center btn-outline-secondary <%= path === " /admin/posts" ? 'active' : ""
+                        %>" href="/admin/england">
+                        <span data-feather="file"></span>
+                        صفحه خارجی
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link text-center btn-outline-secondary <%= path === " /admin/posts" ? 'active' : ""
+                        %>" href="/admin/pageTradition">
+                        <span data-feather="file"></span>
+                        ساخت صفحه سنتی
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <%- body %>
+        <% if(path==="/admin/posts" ){%>
+            <script src="/js/upload.js"></script>
+            <%}%>
+                <script src="/js/bootstrap.bundle.min.js"></script>
+                <script src="/js/jquery.slim.min.js"></script>
+                <script src="/js/bootstrap.min.js"></script>
+</body>
+
+</html>

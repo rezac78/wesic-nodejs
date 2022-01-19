@@ -1,0 +1,120 @@
+<body onscroll="myFunction()">
+    <nav>
+        <header>
+            <!-- start toast -->
+            <div class="toast mitoast d-none d-md-block " role="alert" id="mytoast">
+                <div class="toast-header d-flex justify-content-between">
+                    <button class="close mr-1" type="button">
+                        <span>&times;</span>
+                    </button>
+                    <strong class="Admin">Admin</strong>
+                    <img src="/img/MUSIC.png" alt="">
+                </div>
+                <div class="toast-body text-center"
+                    style="background-color: white;direction: ltr; color: black; font-size: 1.4em;">
+                    <span class="text-center">خوش اومدید</span>
+                </div>
+            </div>
+            <!-- end toast -->
+            <div class="login-box">
+                <form action="">
+                    <div class="nav-bar d-flex justify-content-between">
+                        <div class="search d-flex  ml-2 pt-2">
+                            <button class="serch-reza">جستجو</button>
+                            <input style="height: 5vh;" type="search" class="form-control-sm input-reza"
+                                placeholder="جستجو در بین هزاران اهنگ...">
+                        </div>
+                        <div class="icons d-flex ml-2 pt-2  ">
+                            <a class="music user" href="/users/register"><i class="fas fa-user"></i></a>
+                            <a class="musicplayer" href="/musicplayer"><i class="fab fa-spotify"></i></a>
+                            <a class="game" href="/game"><i class="fas fa-gamepad"></i></a>
+                            <a class="music" href="#">
+                                <i id="musicIcon" class="fas fa-pause"></i>
+                                <audio autoplay>
+                                    <source src="/music/Relax Music 2019 - Nicmusic 01.mp3" type="audio/mpeg">
+                                </audio>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="text text-center">
+                        <span class="re  badge" style="color: black; background-color: white;">sic</span>
+                        <span class="badge" style="color: red;">we</span>
+                    </div>
+                </form>
+            </div>
+            <section class="mainbox">
+                <div class="mains">
+                    <div class="my-row d-flex flex-row justify-content-center  flex-wrap  ">
+                        <div class="my-col"><a style="text-decoration: none; color: white;" href="/">خانه</a>
+                        </div>
+                        <div class="my-col"><a style="text-decoration: none; color: white;" href="/traditi">سنتی</a>
+                        </div>
+                        <div class="my-col"><a style="text-decoration: none; color: white;" href="/musicvideo">موزیک
+                                ویدیو</a></div>
+                        <div class="my-col"><a style="text-decoration: none; color: white;" href="/pop">پاپ</a>
+                        </div>
+                        <div class="my-col"><a style="text-decoration: none; color: white;" href="/musicfilm">موسیقی
+                                فیلم</a></div>
+                        <div class="my-col"><a style="text-decoration: none; color: white;" href="/england">خارجی</a>
+                        </div>
+                        <div class="my-col"><a style="text-decoration: none; color: white;"
+                                href="http://localhost:3000/">راک</a>
+                        </div>
+                        <div class="my-col"><a style="text-decoration: none; color: white;" href="">محلی</a></div>
+                        <div class="my-col"><a style="text-decoration: none; color: white;" href="">بی کلام</a></div>
+                        <div class="my-col"><a style="text-decoration: none; color: white;" href="/study">برای
+                                مطالعه</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+    </nav>
+    <!-- end navbar -->
+    <!-- start card -->
+    <main>
+        <div style="margin: auto;" class="row">
+            <% for(let post of posts){%>
+                <div class="col-md-6 col-lg-6 col-xl-4 col-sm-12 respons">
+                    <div style="margin: 20px;  height: 74vh;" class="card WOW animate__animated ">
+                        <div class="card">
+                            <img style="height: auto;" src="http://localhost:3000/uploads/home/<%= post.images  %> "
+                                class="card-img-top" alt="">
+                            <div class="card-body ">
+                                <div class="menuicon">
+                                    <span class="s1"></span>
+                                    <span class="s2"></span>
+                                </div>
+                                <h3 style="color: white;" class="card-title">
+                                    <%= post.title %>
+                                </h3>
+                                <p style="color: white; font-size: 1em;" class="card-text ">
+                                    <%= truncate(post.content,210) %><a style="color: red;" href="/pageengland">بیشتر
+                                            بخوانید</a>
+                                </p>
+                                <a style="color: red;" href="" class="btn"><span>ورود</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <%}%>
+    </main>
+
+    <footer class="end">
+        <section class="end">
+            <form action="">
+                <div class="text text-center">
+                    <h2>سایت we sic شامل برترین اهنگ های پاپ سنتی<br>موسیقی فیلم و شامل برترین کنسرت های روز دنیا
+                    </h2>
+                    <h2>we sic 2019 - 2021</h2>
+                    <div style="font-size: 1.5em;">
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href="""><i class=" fab fa-instagram"></i></a>
+                        <a href=""><i class="fas fa-film"></i></a>
+                        <a href=""><i class="fab fa-telegram-plane"></i>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </footer>

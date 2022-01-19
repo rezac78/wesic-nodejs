@@ -1,0 +1,34 @@
+<h3 class="mt-2 text-center">ساخت پست</h3>
+<div class="w-50 mx-auto">
+    <%- include("../includes/messages/Loginmessage") %>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <main style="direction: ltr;" class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <form action="/admin/tradition" method="POST" enctype="multipart/form-data">
+                <div class="form-qroup">
+                    <label>عنوان پست</label>
+                    <input type="text" name="title" class="form-control" placeholder="Title">
+                </div>
+                <div class="form-group">
+                    <label>متن</label>
+                    <textarea name="content" class="form-control" placeholder="Title"></textarea>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <button class="btn btn-sm btn-outline-secondary" type="button" id="imageUpload">
+                            آپلود عکس
+                        </button>
+                    </div>
+                    <div class="custom-file">
+                        <input name="images" type="file" class="custom-file-input" id="selectedImage" />
+                        <label id="imageStatus" class="custom-file-label" for="selectedImage">
+                            عکس مورد نظر را انتخاب کنید
+                        </label>
+                    </div>
+                </div>
+                <input type="submit" class="btn btn-info" value="Post">
+            </form>
+        </main>
+    </div>
+</div>

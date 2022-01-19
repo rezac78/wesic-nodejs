@@ -1,0 +1,145 @@
+<body style="background-color: #2e1109;">
+    <style>
+        .circle {
+            width: 20px;
+            height: 20px;
+            border: 1px solid #000;
+            border-radius: 15px;
+        }
+    </style>
+    <!-- !start navbar -->
+    <nav>
+        <header>
+            <div class="login-box" style="background-image: url(/img/12.png)">
+                <form action="">
+                    <div class="nav-bar">
+                        <!-- <div class="search d-flex  ml-2 pt-2">
+                            <button class="serch-reza">search</button>
+                            <input style="height: 5vh;" type="search" class="form-control-sm input-reza"
+                                placeholder="جستجو در بین هزاران اهنگ...">
+                        </div> -->
+                        <div class="icons d-flex ml-2 pt-2">
+                            <!-- <a class="musicplayer" href="/musicplayer"><i class="fab fa-spotify"></i></a> -->
+                        </div>
+                    </div>
+
+                    <div class="text text-center">
+                        <span class="re  badge" style="color: black; background-color: white;">sic</span>
+                        <span class="badge" style="color: red;">we</span>
+                    </div>
+                </form>
+            </div>
+    </nav>
+    <!-- end navbar -->
+    <!-- start piano -->
+    <ul class="set mt-3 ">
+        <li data-note="C" class="key white c"><span class="white-key ">Q</span></li>
+        <li data-note="Db" class="key black c- text-center"><span class="black-key ">1</span></li>
+        <li data-note="D" class="key white d"><span class="white-key ">W</span></li>
+        <li data-note="E" class="key black d- text-center"><span class="black-key ">2</span></li>
+        <li data-note="Eb" class="key white e"><span class="white-key ">E</span></li>
+        <li data-note="F" class="key white f"><span class="white-key ">R</span></li>
+        <li data-note="Gb" class="key black f- text-center"><span class="black-key ">3</span></li>
+        <li data-note="G" class="key white g"><span class="white-key ">T</span></li>
+        <li data-note="Ab" class="key black g- text-center"><span class="black-key ">4</span></li>
+        <li data-note="A" class="key white a"><span class="white-key ">Y</span></li>
+        <li data-note="Bb" class="key black a- text-center"><span class="black-key ">5</span></li>
+        <li data-note="Bb" class="key white b"><span class="white-key ">U</span></li>
+
+        <li data-note="c-1" class="key white c"><span class="white-key ">I</span></li>
+        <li data-note="c-2" class="key black c- text-center"><span class="black-key ">6</span></li>
+        <li data-note="c-3" class="key white d"><span class="white-key ">O</span></li>
+        <li data-note="c-4" class="key black d- text-center"><span class="black-key ">7</span></li>
+        <li data-note="c-5" class="key white e"><span class="white-key ">P</span></li>
+        <li data-note="c-6" class="key white f"><span class="white-key ">A</span></li>
+        <li data-note="c-7" class="key black f- text-center"><span class="black-key ">8</span></li>
+        <li data-note="c-8" class="key white g"><span class="white-key ">S</span></li>
+        <li data-note="c-9" class="key black g- text-center"><span class="black-key ">9</span></li>
+        <li data-note="c-0" class="key white a"><span class="white-key ">D</span></li>
+        <li data-note="c-c" class="key black a- text-center"><span class="black-key ">0</span></li>
+        <li data-note="cc" class="key white b d-none d-sm-block"><span class="white-key ">F</span></li>
+
+        <li data-note="c-1" class="key white c d-none d-sm-block"><span class="white-key ">G</span></li>
+        <li data-note="c-2" class="key black c- d-none d-sm-block text-center"><span class="black-key ">-</span></li>
+        <li data-note="c-3" class="key white d d-none d-sm-block"><span class="white-key ">H</span></li>
+        <li data-note="c-4" class="key black d- d-none d-sm-block  text-center"><span class="black-key ">=</span></li>
+        <li data-note="c-5" class="key white e d-none d-sm-block"><span class="white-key ">J</span></li>
+        <li data-note="c-6" class="key white f d-none d-sm-block"><span class="white-key ">K</span></li>
+        <li data-note="c-7" class="key black f- d-none d-sm-block  text-center"><span class="black-key ">/</span></li>
+        <li data-note="c-8" class="key white g d-none d-sm-block "><span class="white-key ">L</span></li>
+        <li data-note="c-9" class="key black g- d-none d-sm-block  text-center"><span class="black-key ">*</span></li>
+        <li data-note="c-0" class="key white a  d-none d-sm-block "><span class="white-key ">Z</span></li>
+        <li data-note="c-c" class="key black a- d-none d-sm-block  text-center"><span class="black-key ">+</span></li>
+        <li data-note="cc" class="key white b d-none d-sm-block  "><span class="white-key ">X</span></li>
+
+        <li data-note="c-1" class="key white c d-none d-md-block"><span class="white-key ">C</span></li>
+        <li data-note="c-2" class="key black c- d-none d-md-block text-center"><span class="black-key ">[</span></li>
+        <li data-note="c-3" class="key white d d-none d-md-block"><span class="white-key ">V</span></li>
+        <li data-note="c-4" class="key black d- d-none d-md-block text-center"><span class="black-key ">]</span></li>
+        <li data-note="c-5" class="key white e d-none d-md-block"><span class="white-key ">B</span></li>
+
+
+    </ul>
+    <audio id="C" src="/sounds/a-0.ogg"></audio>
+    <audio id="Db" src="/sounds/a-1.ogg"></audio>
+    <audio id="D" src="/sounds/a-2.ogg"></audio>
+    <audio id="E" src="/sounds/a-3.ogg"></audio>
+    <audio id="Eb" src="/sounds/a-4.ogg"></audio>
+    <audio id="F" src="/sounds/a-5.ogg"></audio>
+    <audio id="Gb" src="/sounds/a-6.ogg"></audio>
+    <audio id="G" src="/sounds/a-7.ogg"></audio>
+    <audio id="Ab" src="/sounds/a0.ogg"></audio>
+    <audio id="A" src="/sounds/a1.ogg"></audio>
+    <audio id="Bb" src="/sounds/a2.ogg"></audio>
+
+    <audio id="c-1" src="/sounds/a3.ogg"></audio>
+    <audio id="c-2" src="/sounds/a4.ogg"></audio>
+    <audio id="c-3" src="/sounds/a5.ogg"></audio>
+    <audio id="c-4" src="/sounds/a6.ogg"></audio>
+    <audio id="c-5" src="/sounds/a7.ogg"></audio>
+    <audio id="c-6" src="/sounds/b0.ogg"></audio>
+    <audio id="c-7" src="/sounds/b1.ogg"></audio>
+    <audio id="c-8" src="/sounds/b2.ogg"></audio>
+    <audio id="c-9" src="/sounds/b3.ogg"></audio>
+    <audio id="c-0" src="/sounds/b4.ogg"></audio>
+    <audio id="c-c" src="/sounds/b5.ogg"></audio>
+    <audio id="cc" src="/sounds/b6.ogg"></audio>
+
+    <audio id="d-1" src="/sounds/b7.ogg"></audio>
+    <audio id="d-2" src="/sounds/c-1.ogg"></audio>
+    <audio id="d-3" src="/sounds/c-2.ogg"></audio>
+    <audio id="d-4" src="/sounds/c-3.ogg"></audio>
+    <audio id="d-5" src="/sounds/c-4.ogg"></audio>
+    <audio id="d-6" src="/sounds/c-5.ogg"></audio>
+    <audio id="d-7" src="/sounds/c-6.ogg"></audio>
+    <audio id="d-8" src="/sounds/c-7.ogg"></audio>
+    <audio id="d-9" src="/sounds/c1.ogg"></audio>
+    <audio id="d-0" src="/sounds/c2.ogg"></audio>
+    <audio id="d-d" src="/sounds/c3.ogg"></audio>
+    <audio id="dd" src="/sounds/c4.ogg"></audio>
+
+    <audio id="f-1" src="/sounds/c5.ogg"></audio>
+    <audio id="f-2" src="/sounds/c6.ogg"></audio>
+    <audio id="f-3" src="/sounds/c7.ogg"></audio>
+    <audio id="f-4" src="/sounds/c8.ogg"></audio>
+    <audio id="f-5" src="/sounds/d-1.ogg"></audio>
+    <audio id="f-6" src="/sounds/d-2.ogg"></audio>
+    <audio id="f-7" src="/sounds/d-3.ogg"></audio>
+    <audio id="f-8" src="/sounds/d-4.ogg"></audio>
+    <audio id="f-9" src="/sounds/d-5.ogg"></audio>
+    <audio id="f-0" src="/sounds/d-6.ogg"></audio>
+    <audio id="f-f" src="/sounds/d-7.ogg"></audio>
+    <audio id="ff" src="/sounds/d1.ogg"></audio>
+
+    <audio id="r-1" src="/sounds/d2.ogg"></audio>
+    <audio id="r-2" src="/sounds/d3.ogg"></audio>
+    <audio id="r-3" src="/sounds/d4.ogg"></audio>
+    <audio id="r-4" src="/sounds/d5.ogg"></audio>
+    <audio id="r-5" src="/sounds/d5.ogg"></audio>
+    <audio id="r-6" src="/sounds/d6.ogg"></audio>
+    <audio id="r-7" src="/sounds/d7.ogg"></audio>
+    <audio id="r-8" src="/sounds/e1.ogg"></audio>
+    <audio id="r-9" src="/sounds/e2.ogg"></audio>
+    <audio id="r-0" src="/sounds/e3.ogg"></audio>
+    <audio id="r-r" src="/sounds/e4.ogg"></audio>
+    <audio id="rr" src="/sounds/e5.ogg"></audio>

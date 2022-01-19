@@ -1,0 +1,135 @@
+<% if(admins.length>0 || pops.length>0){%>
+    <h2 class="mt-2 text-center">اخرین پست ها</h2>
+    <div class="form-group w-75 m-5">
+        <table class="table table-dark table-sm">
+            <thead>
+                <tr>
+                    <th>برچسب</th>
+                    <th>عنوان</th>
+                    <th>تاریخ</th>
+                    <th>عکس</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for(let admin of admins){%>
+                    <tr>
+                        <td><a href="/admins/<%= admins._id%>"></a>
+                            <%= admin.title%>
+                        </td>
+                        <td>
+                            <%= formatDate(admin.createAt)%>
+                        </td>
+                        <td class="text-center">
+                            <%= admin.content%>
+                        </td>
+                        <td class="text-center">
+                            <%= admin.images%>
+                        </td>
+                        <td>
+                            <a href="/admin/edit-post/<%= admin._id%>" class="btn btn-sm btn-primary">ویرایش</a>
+                        </td>
+                        <td>
+                            <a href="/admin/delete-post/<%= admin._id%>" class="btn btn-sm btn-danger">حذف</a>
+                        </td>
+                    </tr>
+                    <%}%>
+            </tbody>
+            <tbody>
+                <% for(let pop of pops){%>
+                    <tr>
+                        <td><a href="/admin/<%= pops._id%>"></a>
+                            <%= pop.title%>
+                        </td>
+                        <td>
+                            <%= formatDate(pop.createAt)%>
+                        </td>
+                        <td class="text-center">
+                            <%= pop.content%>
+                        </td>
+                        <td class="text-center">
+                            <%= pop.images%>
+                        </td>
+                        <td>
+                            <a href="/admin/pop/edit-post/<%= pop._id%>" class="btn btn-sm btn-primary">ویرایش</a>
+                        </td>
+                        <td>
+                            <a href="/admin/pop/delete-post/<%= pop._id%>" class="btn btn-sm btn-danger">حذف</a>
+                        </td>
+                    </tr>
+                    <%}%>
+            </tbody>
+            <tbody>
+                <% for(let tradition of traditions){%>
+                    <tr>
+                        <td><a href="/admin/<%= traditions._id%>"></a>
+                            <%= tradition.title%>
+                        </td>
+                        <td>
+                            <%= formatDate(tradition.createAt)%>
+                        </td>
+                        <td class="text-center">
+                            <%= tradition.content%>
+                        </td>
+                        <td class="text-center">
+                            <%= tradition.images%>
+                        </td>
+                        <td>
+                            <a href="/admin/tradition/edit-post/<%= tradition._id%>" class="btn btn-sm btn-primary">ویرایش</a>
+                        </td>
+                        <td>
+                            <a href="/admin/tradition/delete-post/<%= tradition._id%>" class="btn btn-sm btn-danger">حذف</a>
+                        </td>
+                    </tr>
+                    <%}%>
+            </tbody>
+            <tbody>
+                <% for(let musicfilm of musicfilms){%>
+                    <tr>
+                        <td><a href="/admin/<%= musicfilms._id%>"></a>
+                            <%= musicfilm.title%>
+                        </td>
+                        <td>
+                            <%= formatDate(musicfilm.createAt)%>
+                        </td>
+                        <td class="text-center">
+                            <%= musicfilm.content%>
+                        </td>
+                        <td class="text-center">
+                            <%= musicfilm.images%>
+                        </td>
+                        <td>
+                            <a href="/admin/musicfilm/edit-post/<%= musicfilm._id%>" class="btn btn-sm btn-primary">ویرایش</a>
+                        </td>
+                        <td>
+                            <a href="/admin/musicfilm/delete-post/<%= musicfilm._id%>" class="btn btn-sm btn-danger">حذف</a>
+                        </td>
+                    </tr>
+                    <%}%>
+            </tbody>
+            <tbody>
+                <% for(let england of englands){%>
+                    <tr>
+                        <td><a href="/admin/<%= englands._id%>"></a>
+                            <%= england.title%>
+                        </td>
+                        <td>
+                            <%= formatDate(england.createAt)%>
+                        </td>
+                        <td class="text-center">
+                            <%= england.content%>
+                        </td>
+                        <td class="text-center">
+                            <%= england.images%>
+                        </td>
+                        <td>
+                            <a href="/admin/england/edit-post/<%= england._id%>" class="btn btn-sm btn-primary">ویرایش</a>
+                        </td>
+                        <td>
+                            <a href="/admin/england/delete-post/<%= england._id%>" class="btn btn-sm btn-danger">حذف</a>
+                        </td>
+                    </tr>
+                    <%}%>
+            </tbody>
+        </table>
+    </div>
+    <%}%>

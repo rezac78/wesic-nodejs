@@ -1,0 +1,42 @@
+<audio autoplay>
+    <source src="/img/login/04 Rage Khaab [320]_output.mp3" type="audio/mpeg">
+</audio>
+<div>
+    <%- include("./includes/messages/Loginmessage") %>
+</div>
+<main class="form-signin background">
+    <form action="/users/register" method="POST">
+
+        <h1 class="h3 mb-3 fw-normal text-center">ثبت نام</h1>
+        <div class="form-floating text-right">
+            <label for="floatingInput">نام و نام خوانوادگی</label>
+            <input type="text" name="fullname" class="form-control" id="floatingInput" placeholder="name_example">
+        </div>
+        <div class="form-floating text-right">
+            <label for="floatingInput">ایمیل</label>
+            <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        </div>
+        <div class="form-floating text-right">
+            <label for="floatingPassword">پسورد</label>
+            <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
+        </div>
+        <div class="form-floating text-right">
+            <label for="floatingPassword">تکرار پسورد</label>
+            <input type="password" name="ConfirmPassword" class="form-control" id="floatingPassword"
+                placeholder="Password">
+        </div>
+
+        <div class="checkbox mb-3 text-right">
+            <label>
+                <input type="checkbox" value="remember-me"> مرا به خاطر بسپار
+            </label>
+        </div>
+        <div class="checkbox mb-3 text-right">
+            <label>
+                <a href="/users/login">اکانت دارم</a>
+            </label>
+        </div>
+        <button class="w-100 btn btn-lg btn-danger" type="submit">ثبت نام</button>
+        <p class="mt-5 mb-3 text-muted"></p>
+    </form>
+</main>

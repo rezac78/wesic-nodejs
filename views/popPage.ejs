@@ -1,0 +1,97 @@
+<body onscroll="myFunction()"
+    style="background-image: url(/img/ZLINE\ Kitchen\ and\ Bath\ 3\ x\ 5\ Oil-Rubbed\ Bronze\ Copper\ Sample.jfif)">
+    <!-- !start navbar -->
+    <nav>
+        <header>
+            <div class="login-box" style="background-image: url(/img/12.png)">
+                <form action="">
+                    <div class="nav-bar d-flex justify-content-between">
+                        <div class="search d-flex  ml-2 pt-2">
+                            <button class="serch-reza">جستجو</button>
+                            <input style="height: 5vh;" type="search" class="form-control-sm input-reza"
+                                placeholder="جستجو در بین هزاران اهنگ...">
+                        </div>
+                        <div class="icons d-flex ml-2 pt-2">
+                            <a class="music user" href="/users/register"><i class="fas fa-user"></i></a>
+                            <a class="musicplayer" href="/musicplayer"><i class="fab fa-spotify"></i></a>
+                            <a class="game" href="/game"><i class="fas fa-gamepad"></i></a>
+                            <a class="music" href="#">
+                                <i id="musicIcon" class="fas fa-pause"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text text-center">
+                        <span class="re  badge" style="color: black; background-color: white;">sic</span>
+                        <span class="badge" style="color: blue;">we</span>
+                    </div>
+                </form>
+            </div>
+        </header>
+    </nav>
+    <nav>
+        <section class="mainbox">
+            <div class="mains">
+                <div class="my-row d-flex flex-row justify-content-center  flex-wrap"
+                    style="background-image: url(/img/12.png);">
+                    <div class="my-col"><a style="text-decoration: none; color: white;" href="/">خانه</a>
+                    </div>
+                    <div class="my-col"><a style="text-decoration: none; color: white;" href="/traditi">سنتی</a>
+                    </div>
+                    <div class="my-col"><a style="text-decoration: none; color: white;" href="/musicvideo">موزیک
+                            ویدیو</a></div>
+                    <div class="my-col"><a style="text-decoration: none; color: white;" href="/pop">پاپ</a></div>
+                    <div class="my-col"><a style="text-decoration: none; color: white;" href="/musicfilm">موسیقی
+                            فیلم</a></div>
+                    <div class="my-col"><a style="text-decoration: none; color: white;" href="/england">خارجی</a>
+                    </div>
+                    <div class="my-col"><a style="text-decoration: none; color: white;" href="/cover">راک</a></div>
+                    <div class="my-col"><a style="text-decoration: none; color: white;" href="/cover">محلی</a></div>
+                    <div class="my-col"><a style="text-decoration: none; color: white;" href="/cover">بی کلام</a></div>
+                    <div class="my-col"><a style="text-decoration: none; color: white;" href="/study">برای
+                            مطالعه</a></div>
+                </div>
+            </div>
+        </section>
+
+    </nav>
+    <!-- !end navbar -->
+    <!-- !start card -->
+    <main>
+        <div style="margin: auto;" class="row">
+            <% popPage.forEach( function (popPages){%>
+                <div class="col-md-6 col-lg-6 col-xl-4 col-sm-12 respons">
+                    <div  style="margin: 20px;  height: 65vh; background-image: url(/img/ZLINE\ Kitchen\ and\ Bath\ 3\ x\ 5\ Oil-Rubbed\ Bronze\ Copper\ Sample.jfif);"
+                        class="card WOW animate__animated">
+                        <div class="card">
+                            <img src="http://162.55.211.40:3000/uploads/popPage/img/<%= popPages.image  %>" alt="">
+                            <div class="card-body ">
+                                <div class="menuicon">
+                                    <span class="s1"></span>
+                                    <span class="s2"></span>
+                                </div>
+                                <audio controls>
+                                    <source src="http://162.55.211.40:3000/uploads/popPage/music/<%= popPages.music  %>"
+                                    type="audio/mp3">
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <% }) %>
+    </main>
+    <!-- !end navbar -->
+    <!-- !start footer -->
+    <footer class="end" style="background-image: url(/img/12.png);">
+        <form action="">
+            <div style="margin-top: 10%;" class="text text-center">
+                <h2>سایت we sic شامل برترین اهنگ های پاپ سنتی<br>موسیقی فیلم و شامل برترین کنسرت های روز دنیا</h2>
+                <h2>we sic 2019 - 2021</h2>
+                <div style="font-size: 1.5em;">
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href="""><i class=" fab fa-instagram"></i></a>
+                    <a href=""><i class="fas fa-film"></i></a>
+                    <a href=""><i class="fab fa-telegram-plane"></i>
+                </div>
+            </div>
+        </form>
+    </footer>
