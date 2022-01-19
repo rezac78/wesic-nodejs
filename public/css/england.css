@@ -1,0 +1,644 @@
+*{
+    margin: 0;
+    direction: rtl;
+    font-family: "montserrat", sans-serif;
+    text-decoration: none;
+    outline: none; 
+    padding: 0;
+
+}
+
+body{
+    background-image:url(/img/ZLINE\ Kitchen\ and\ Bath\ 3\ x\ 5\ Oil-Rubbed\ Bronze\ Copper\ Sample.jfif) ;
+    width: 100%;
+    min-height: 100%;
+}
+
+.login-box{
+    background-image: url(/img/12.png);
+    width: 100%;
+    min-height: 17vh;
+    border-bottom: 2px solid rgb(38, 91, 117);
+    justify-content: space-between;
+}
+
+
+/* ساخت هدر سایت بخش اول */
+.dropdown .btn2{
+    border: none;
+    background-image: url(/img/12.png);
+    color:#3D5A68 ;
+    font-size: 1.2em;
+}
+
+.input-group input{
+    background-image: url(/img/12.png);
+    border: 1px solid blue;
+    color: darkblue;
+}
+.input-group span{
+    border: 1px solid blue;
+
+}
+.dropdown .btn2 i{
+    margin-right: 8px;
+    
+}
+.dropdown .dropdown-menu{
+    background-image: url(/img/ZLINE\ Kitchen\ and\ Bath\ 3\ x\ 5\ Oil-Rubbed\ Bronze\ Copper\ Sample.jfif);
+
+}
+.header1{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.right{
+    display: flex;
+    margin-right: 3px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.icon1{
+    font-size: 1.2em;
+    margin-left: 5px;
+    color:#3D5A68 ;
+}
+
+.music{
+    font-size: 1.2em;
+    color:#3D5A68 ;
+}
+.music i{
+    margin-right: 1pc;
+}
+.music:hover{
+    color: blue;
+}
+.game{
+    font-size: 1.2em;
+    color:#3D5A68 ;
+}
+.game i{
+    margin-right: 1pc;
+}
+.game:hover{
+    color: blue;
+}
+.left{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-bottom: 1.5px solid #425F6D;
+}
+
+.icon2 i{
+    color: #3D5A68;
+    margin-left: 10px;
+}
+
+.z2 input{
+    border: none;
+    background-image: url(/img/12.png);
+    font-size: 1.3em;
+    width: 250px;
+}
+.z1{
+    color: #3D5A68;
+    font-size: 1.2em;
+    margin-right: 12px;
+}
+.btn2:hover{
+    color: blue !important;
+}
+.icon1 i:hover{
+    color: blue !important;
+}
+.icon2 i:hover{
+    color: blue !important;
+}
+
+.text .badge{
+    height: 45.8px;
+    width: 92px;
+    font-size: 3em;
+}
+.text .re{
+    padding-top:0px;
+}
+.serch-reza::after{
+    content: '';
+    position: absolute;
+    background: rgb(41, 39, 39);
+    transition: 0.20s;
+}
+
+.serch-reza:hover{
+    color: blue;
+}
+
+.input-reza{
+   background-color: #0A0A0B; 
+   border: 2px solid blue;
+   color: white;
+}
+.musicplayer{
+    font-size: 1.2em;
+    color:#3D5A68 ;
+}
+.musicplayer i{
+    margin-right: 1pc;
+}
+.musicplayer:hover{
+    color: blue;
+}
+.serch-reza{
+    border: 1px solid blue;
+    height: 5vh;
+    width: 80px;
+    background-color: rgba(255, 249, 249, 0);
+    color: white;
+}
+/* ساخت منوی سایت */
+.my-col{
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1px;
+    margin: 8px 35px;
+    text-align: center;
+    border-radius: 50px;
+}
+.my-row{
+    background-image: url(/img/12.png);
+    border-bottom: 2px solid rgb(38, 91, 117);
+}
+
+.my-col a:hover{
+    color: blue !important;
+}
+
+
+/* ساخت پوستر بخش میانی */
+
+
+.carousel-inner .carousel-item img{
+    width: 100%;
+    height: 500px;
+}
+
+.carousel-caption p{
+    font-size: 2em;
+    color: #6d6b6b;
+    margin: 0px -4pc;
+}
+.carousel-caption .red{
+    font-size: 2em;
+    color: #3d3133;
+    margin: 0px 0pc;
+}
+
+.z9{
+    position: absolute;
+    color: white;
+    right: 5%;
+    top: 10%;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+.name22{
+    position: absolute;
+    bottom: 20px;
+    right:15px;
+    top: 10px;
+    font-size: 40px;
+    font-weight: 900;
+    opacity: .8;
+    color: white;
+}
+.name23{
+    position: absolute;
+    bottom: 20px;
+    right: 4pc;
+    top: 15pc;
+    font-size: 32px;
+    font-weight: 900;
+    opacity: .8;
+}
+
+.name24{
+    position: absolute;
+    bottom: 20px;
+    right: 4pc;
+    top: 16pc;
+    font-size: 32px;
+    font-weight: 900;
+    opacity: .8;
+}
+.name25{
+    position: absolute;
+    bottom: 20px;
+    right: 4pc;
+    top: 17.5pc;
+    font-size: 32px;
+    font-weight: 900;
+    opacity: .8;
+}
+.name26{
+    position: absolute;
+    bottom: 20px;
+    right:10px;
+    top: 13.5pc;
+    font-size: 40px;
+    font-weight: 900;
+}
+.name27{
+    position: absolute;
+    bottom: 20px;
+    right:15px;
+    top: 14pc;
+    font-size: 40px;
+    font-weight: 900;
+}
+.top-section{
+    position: relative;
+}
+
+.top-section img{
+    width: 100%;;
+}
+.top-section2 img{
+    width: 100%;
+    height: 290px;
+}
+
+.top-section4 img{
+    width: 100%;
+    height: 280px;
+}
+.top-section5 img{
+    width: 100%;
+    height: 270px;
+}
+.top-section6 img{
+    width: 100%;
+    height: 280px;
+}
+.top-section7 img{
+    width: 100%;
+    height: 280px;
+}
+.slider .slides .active{
+    display: block;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+.slider .buttons{
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+}
+
+.slider .buttons i{
+    color: white;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.slider .buttons i:hover{
+    color: #425F6D;
+}
+@-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+  }
+
+  /* ساخت کارت منو */
+.slider2{
+    position: absolute;
+}
+.sliders2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.left3{
+    display: flex;
+}
+
+
+.card{
+    height: 0;
+}
+
+.card:hover{
+    box-shadow: 0 0 30px blue;
+  }
+
+
+.row .card{
+    background-image: url(/img/ZLINE\ Kitchen\ and\ Bath\ 3\ x\ 5\ Oil-Rubbed\ Bronze\ Copper\ Sample.jfif);
+
+}
+
+
+
+
+.menuicon{
+    position: absolute;
+    width: 20px;
+    left: 10px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.menuicon span{
+    width: 100%;
+    height: 3px;
+    background: #614c4c;
+    position: relative;
+    display: block;
+    margin-bottom: 6px;
+    opacity: .5;
+    transition: .4s;
+}
+
+.menuicon .s1{
+    left: -5px;
+}
+.menuicon .s2{
+    left: 5px;
+}
+.menuicon:hover span{
+    left: 25pc;
+    background-color: blue !important;
+}
+.name{
+    position: absolute;
+    bottom: 20px;
+    left: 60px;
+    top: 13pc;
+    font-size: 40px;
+    font-weight: 900;
+    opacity: .8;
+    color: #c8caca;
+}
+.name span{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.name2{
+    position: absolute;
+    bottom: 20px;
+    left: 60px;
+    top: 13pc;
+    font-size: 40px;
+    font-weight: 900;
+    opacity: .8;
+    color: #f5f5f5;
+}
+.name2 span{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.info-section{
+    padding: 40px;
+    padding-top: 0;
+    color: rgb(243, 241, 241);
+}
+h2{
+    position: relative;
+    font-size: 22px;
+}
+p{
+    margin-top: 8px;
+    text-align: justify;
+    font-size: 15px;
+    font-weight: bold;
+}
+.card .card-body a{
+    outline: none; 
+    text-decoration: none;
+    color: blue;
+}
+.card-body .btn {
+    width: 100px;
+    height: 45px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 30px;
+    transition: 0.4s;
+    transform-style: preserve-3d;
+    background: rgba(78, 77, 77, 0.26);
+    perspective: 800px;
+    color: white;
+    border: 3px solid blue;
+}
+.card-body .btn span{
+    position: absolute;
+    top: -5px;
+    left: 17px;
+}
+
+
+.btn::after{
+    content: '';
+    position: absolute;
+    background: rgb(41, 39, 39);
+    transition: 0.4s;
+}
+
+.btn:hover{
+    transform: rotatex(30deg);
+}
+
+
+.slider-main{
+    position: relative;
+}
+
+@media screen and (max-width:600){
+    body{
+        position: relative;
+        left: 55pc;
+    }
+}
+
+/* ساخت بخش پایانی */
+
+.end{
+    width: 100%;
+    min-height: 100%;
+    background-image: url(/img/12.png);
+    border-bottom: 5px solid rgb(38, 91, 117);
+}
+
+.end h2{
+    color:#3D5A68 ;
+    position: relative;
+    padding-top: 1pc;
+    padding-right: 2pc;
+}
+
+
+
+.end i{
+    color:#3D5A68 ;
+    margin: 5px;
+}
+.text i:hover{
+    color: blue !important;
+}
+
+.icon{
+    width: 100px;
+    transform: translateY(-50%);
+    text-align: center;
+    margin-top: 0px;
+}
+
+
+.icon-box{
+    width: 90px;
+    height: 50px;
+    display: inline-block;
+    margin: 10px;
+    background: rgba(182, 177, 177, 0);
+    color: #fff;
+    cursor: pointer;
+}
+
+.icon-box i{
+    position: absolute;
+    right: 10px;
+    top: -5px;
+    width: 90px;
+    height: 60px;
+    font-size: 30px;
+    line-height: 60px;
+    background: rgba(71, 71, 71, 0);
+    z-index: 1;
+    transition: transform 0.6s;
+}
+.icon-box span{
+    position: absolute;
+    width: 100%;
+    right: 5px;
+    bottom: 0;
+    padding: 15px 0px;
+}
+.icon-box:hover i{
+    transform: translateY(-30px);
+}
+/* ?modal */
+@media screen and (min-width: 44px) and (max-width: 1025px){
+    .icon-box i{
+        position: absolute;
+        right:-15px;
+    }
+    .icon-box span{
+        position: absolute;
+        right:-15px;
+    }
+}
+@media screen and (min-width: 44px) and (max-width: 769px){
+    .icon-box i{
+        position: absolute;
+        right:-15px;
+    }
+    .icon-box span{
+        position: absolute;
+        right:-15px;
+    }
+}
+@media screen and (min-width: 44px) and (max-width: 426px){
+    .end h2{
+        font-size: 1.2em;
+        margin-left: 20px;
+    }
+    .icon-box i{
+        position: absolute;
+        right:-15px;
+    }
+    .icon-box span{
+        position: absolute;
+        right:-15px;
+    }
+}
+@media screen and (min-width: 44px) and (max-width: 768px){
+    .respons{
+        padding: 50px;
+    }
+}
+@media screen and (min-width: 44px) and (max-width: 560px){
+    .respons{
+        padding: 0px;
+    }
+}
+@media screen and (min-width: 44px) and (max-width: 425px){
+    .end h2{
+        font-size: 1.2em;
+        margin-left: 20px;
+    }
+    .icon-box i{
+        position: absolute;
+        right:-15px;
+    }
+    .icon-box span{
+        position: absolute;
+        right:-15px;
+    }
+    .game{
+        position: absolute;
+        top: 2.5pc;
+        left: 0.5pc;
+    }
+    .musicplayer i{
+        position: absolute;
+        top: 2.5pc;
+        left: 2.6pc;
+    }
+}
+@media screen and (min-width: 44px) and (max-width: 357px){
+    .input-reza{
+        width: 170px;
+    }
+    .end h2{
+        font-size: 1.2em;
+        margin-left: 20px;
+    }
+    .icon-box i{
+        position: absolute;
+        right:-15px;
+    }
+    .icon-box span{
+        position: absolute;
+        right:-15px;
+    }
+    .user{
+        position: absolute;
+        left: 2.5pc;
+    }
+}

@@ -1,0 +1,661 @@
+*{
+    margin: 0;
+    direction: rtl;
+    font-family: "montserrat", sans-serif;
+    text-decoration: none;
+    outline: none; 
+    padding: 0;
+
+}
+
+body{
+    background-image:url(/img/ZLINE\ Kitchen\ and\ Bath\ 3\ x\ 5\ Oil-Rubbed\ Bronze\ Copper\ Sample.jfif) ;
+    width: 100%;
+    min-height: 100%;
+}
+
+.login-box{
+    background-image: url(/img/12.png);
+    width: 100%;
+    min-height: 17vh;
+    border-bottom: 2px solid rgb(38, 91, 117);
+    justify-content: space-between;
+}
+
+
+/* ساخت هدر سایت بخش اول */
+.dropdown .btn2{
+    border: none;
+    background-image: url(/img/12.png);
+    color:#3D5A68 ;
+    font-size: 1.2em;   
+}
+.input-group input{
+    background-image: url(/img/12.png);
+    border: 1px solid red;
+    color: darkblue;
+}
+.input-group span{
+    border: 1px solid red;
+
+}
+.dropdown .btn2 i{
+    margin-right: 8px;
+    
+}
+.dropdown .dropdown-menu{
+    background-image: url(/img/ZLINE\ Kitchen\ and\ Bath\ 3\ x\ 5\ Oil-Rubbed\ Bronze\ Copper\ Sample.jfif);
+
+}
+.header1{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.right{
+    display: flex;
+    margin-right: 3px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.Typewriter__wrapper{
+    color: purple;
+}
+.icon1{
+    font-size: 1.2em;
+    margin-left: 5px;
+    color:#3D5A68 ;
+}
+
+.music{
+    font-size: 1.2em;
+    color:#3D5A68 ;
+}
+.music i{
+    margin-right: 1pc;
+}
+.music:hover{
+    color: red;
+}
+.left{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-bottom: 1.5px solid #425F6D;
+}
+
+.icon2 i{
+    color: #3D5A68;
+    margin-left: 10px;
+}
+
+.z2 input{
+    border: none;
+    background-image: url(/img/12.png);
+    font-size: 1.3em;
+    width: 250px;
+}
+.z1{
+    color: #3D5A68;
+    font-size: 1.2em;
+    margin-right: 12px;
+}
+.btn2:hover{
+    color: red !important;
+}
+.icon1 i:hover{
+    color: red !important;
+}
+.icon2 i:hover{
+    color: red !important;
+}
+
+.text .badge{
+    height: 45.8px;
+    width: 92px;
+    font-size: 3em;
+}
+.text .re{
+    padding-top:0px;
+}
+.serch-reza::after{
+    content: '';
+    position: absolute;
+    background: rgb(41, 39, 39);
+    transition: 0.20s;
+}
+
+.serch-reza:hover{
+    color: red;
+}
+
+.input-reza{
+   background-color: #0A0A0B; 
+   border: 2px solid red;
+   color: white;
+}
+.serch-reza{
+    border: 1px solid red;
+    height: 5vh;
+    width: 80px;
+    background-color: rgba(255, 249, 249, 0);
+    color: white;
+}
+
+/* ساخت منوی سایت */
+.my-col{
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1px;
+    margin: 8px 35px;
+    text-align: center;
+    border-radius: 50px;
+}
+.my-row{
+    background-image: url(/img/12.png);
+    border-bottom: 2px solid rgb(38, 91, 117);
+}
+
+.my-col a:hover{
+    color: red !important;
+}
+
+
+/* ساخت پوستر بخش میانی */
+
+
+.bn{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,3fr));
+    grid-auto-rows: 150px;
+    grid-auto-flow: dense;
+    gap: 2px;
+}
+
+.bn>div img{
+    width: 100%;
+    height: 100%;
+}
+.vertical{
+    grid-row: auto/span 2;
+}
+
+.horizontal{
+    grid-column: auto/span 2;
+}
+
+.big{
+    grid-column: auto/span 3;
+}
+
+
+.slider2{
+    position: absolute;
+}
+.sliders2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.left3{
+    display: flex;
+}
+
+
+.card{
+    height: 0;
+}
+
+.card:hover{
+    box-shadow: 0 0 30px gold;
+  }
+
+
+.row .card{
+    background-image: url(/img/ZLINE\ Kitchen\ and\ Bath\ 3\ x\ 5\ Oil-Rubbed\ Bronze\ Copper\ Sample.jfif);
+
+}
+
+
+
+
+
+.menuicon{
+    position: absolute;
+    width: 20px;
+    left: 10px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.menuicon span{
+    width: 100%;
+    height: 3px;
+    background: #614c4c;
+    position: relative;
+    display: block;
+    margin-bottom: 6px;
+    opacity: .5;
+    transition: .4s;
+}
+
+.menuicon .s1{
+    left: -5px;
+}
+.menuicon .s2{
+    left: 5px;
+}
+.menuicon:hover span{
+    left: 25pc;
+    background-color: gold !important;
+}
+.name{
+    position: absolute;
+    bottom: 20px;
+    left: 60px;
+    top: 13pc;
+    font-size: 40px;
+    font-weight: 900;
+    opacity: .8;
+    color: #c8caca;
+}
+.name span{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.name2{
+    position: absolute;
+    bottom: 20px;
+    left: 60px;
+    top: 13pc;
+    font-size: 40px;
+    font-weight: 900;
+    opacity: .8;
+    color: #f5f5f5;
+}
+.name2 span{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.info-section{
+    padding: 40px;
+    padding-top: 0;
+    color: rgb(243, 241, 241);
+}
+h2{
+    position: relative;
+    font-size: 22px;
+}
+p{
+    margin-top: 8px;
+    text-align: justify;
+    font-size: 15px;
+    font-weight: bold;
+}
+.card .card-body a{
+    outline: none; 
+    text-decoration: none;
+    color: gold;
+}
+.card-body .btn {
+    width: 100px;
+    height: 45px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 30px;
+    transition: 0.4s;
+    transform-style: preserve-3d;
+    background: rgba(78, 77, 77, 0.26);
+    perspective: 800px;
+    color: white;
+    border: 3px solid gold;
+}
+.card-body .btn span{
+    position: absolute;
+    top: -5px;
+    left: 17px;
+}
+
+
+.btn::after{
+    content: '';
+    position: absolute;
+    background: rgb(41, 39, 39);
+    transition: 0.4s;
+}
+
+.btn:hover{
+    transform: rotatex(30deg);
+}
+
+
+.slider-main{
+    position: relative;
+}
+
+@media screen and (max-width:600){
+    body{
+        position: relative;
+        left: 55pc;
+    }
+}
+
+.end h2{
+    color:#3D5A68 ;
+    position: relative;
+    padding-top: 1pc;
+    padding-right: 2pc;
+}
+
+
+
+.end i{
+    color:#3D5A68 ;
+    margin: 5px;
+}
+.text i:hover{
+    color: gold !important;
+}
+
+.icon{
+    width: 100px;
+    transform: translateY(-50%);
+    text-align: center;
+    margin-top: 0px;
+}
+
+
+.icon-box{
+    width: 90px;
+    height: 50px;
+    display: inline-block;
+    margin: 10px;
+    background: rgba(182, 177, 177, 0);
+    color: #fff;
+    cursor: pointer;
+}
+
+.icon-box i{
+    position: absolute;
+    right: 10px;
+    top: -5px;
+    width: 90px;
+    height: 60px;
+    font-size: 30px;
+    line-height: 60px;
+    background: rgba(71, 71, 71, 0);
+    z-index: 1;
+    transition: transform 0.6s;
+}
+.icon-box span{
+    position: absolute;
+    width: 100%;
+    right: 5px;
+    bottom: 0;
+    padding: 15px 0px;
+}
+.icon-box:hover i{
+    transform: translateY(-30px);
+}
+.icon-box span:hover{
+    color: black;
+}
+
+.banner-heading{
+    animation: anim;
+    animation-duration: 3S;
+    font-size:5em;
+}
+.banner-par{
+    animation-name: anim;
+    animation-duration:2s;
+    animation-delay: .2s;
+}
+
+@keyframes anim{
+    0%{
+        opacity: 0;
+        transform: translateX(-160px);
+        color: purple;
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+        color: purple;
+    }
+}
+
+  /* ساخت کارت منو */
+
+/* ساخت بخش پایانی */
+
+.end{
+    width: 100%;
+    min-height: 100%;
+    background-image: url(/img/12.png);
+    border-bottom: 5px solid rgb(38, 91, 117);
+}
+
+.end h2{
+    color:#3D5A68 ;
+    position: relative;
+    padding-top: 1pc;
+    padding-right: 2pc;
+}
+
+
+
+.end i{
+    color:#3D5A68 ;
+    margin: 5px;
+}
+.text i:hover{
+    color: red !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+.icon{
+    width: 100px;
+    transform: translateY(-50%);
+    text-align: center;
+    margin-top: 0px;
+}
+
+
+.icon-box{
+    width: 90px;
+    height: 50px;
+    display: inline-block;
+    margin: 10px;
+    background: rgba(182, 177, 177, 0);
+    color: #fff;
+    cursor: pointer;
+}
+
+.icon-box i{
+    position: absolute;
+    right: 10px;
+    top: -5px;
+    width: 90px;
+    height: 60px;
+    font-size: 30px;
+    line-height: 60px;
+    background: rgba(71, 71, 71, 0);
+    z-index: 1;
+    transition: transform 0.6s;
+}
+.icon-box span{
+    position: absolute;
+    width: 100%;
+    right: 5px;
+    bottom: 0;
+    padding: 15px 0px;
+}
+.icon-box:hover i{
+    transform: translateY(-30px);
+}
+
+
+/* ?modal */
+@media screen and (min-width: 44px) and (max-width: 1025px){
+    .icon-box i{
+        position: absolute;
+        right:-15px;
+    }
+    .icon-box span{
+        position: absolute;
+        right:-15px;
+    }
+    .banner-heading{
+        font-size:2.5em !important;
+    }
+    .banner-par span{
+        font-size:1em !important;
+    }
+
+    .bn{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(150px,3fr));
+        grid-auto-rows: 150px;
+        grid-auto-flow: dense;
+        gap: 1px;
+    }
+    
+    .bn>div img{
+        width: 100%;
+        height: 100%;
+    }
+    .vertical{
+        grid-row: auto/span 2;
+    }
+    
+    .horizontal{
+        grid-column: auto/span 4;
+    }
+    
+    .big{
+        grid-column: auto/span 2;
+    }
+    .c16{
+        display: block !important;
+    }
+}
+@media screen and (min-width: 44px) and (max-width: 769px){
+    .icon-box i{
+        position: absolute;
+        right:-15px;
+    }
+    .icon-box span{
+        position: absolute;
+        right:-15px;
+    }
+}
+@media screen and (min-width: 44px) and (max-width: 426px){
+    .end h2{
+        font-size: 1.2em;
+        margin-left: 20px;
+    }
+    .icon-box i{
+        position: absolute;
+        right:-15px;
+    }
+    .icon-box span{
+        position: absolute;
+        right:-15px;
+    }
+}
+@media screen and (min-width: 44px) and (max-width: 376px){
+    .end h2{
+        font-size: 1.2em;
+        margin-left: 20px;
+    }
+    .icon-box i{
+        position: absolute;
+        right:-15px;
+    }
+    .icon-box span{
+        position: absolute;
+        right:-15px;
+    }
+}
+@media screen and (min-width: 44px) and (max-width: 321px){
+    .input-reza{
+        width: 170px;
+    }
+    .end h2{
+        font-size: 1.2em;
+        margin-left: 20px;
+    }
+    .icon-box i{
+        position: absolute;
+        right:-15px;
+    }
+    .icon-box span{
+        position: absolute;
+        right:-15px;
+    }
+}
+.owl-stage-outer{
+    direction: ltr;
+}
+.poster{
+    margin: 10px;
+    height: 70%;
+}
+.poster img{
+    height: 40vh;
+}
+.postertext{
+    font-size: 2em;
+    color: white;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  
